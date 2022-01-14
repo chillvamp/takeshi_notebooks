@@ -11,9 +11,8 @@ correr directamente ya sea en python2 ( ros no es mi culpa)
 o en un kernel apuntando a este python para los notebooks (jupyter notebook)
 https://ipython.readthedocs.io/en/stable/install/kernel_install.html
 
-
+Ejemplo como correr MOVEIT (Pick  up table demo notebook)
+https://www.youtube.com/watch?v=kE-TehNK540
 
 Ejemplo de como correr el give sugar 2 man con servidor
-
-
 https://youtu.be/P8gqREcRk_8
