@@ -136,10 +136,11 @@ def delete_object(name):
 
 def spawn_object(gazebo_name, name, x, y, z, yaw,roll=0.0 , pitch=0.0):
     global _path_xml, _path_model
-    _path_xml = '/home/oscar/Codes/catkin_mio_ws/src/tmc_wrs_gazebo_world/models/MODEL_NAME/model-1_4.sdf'
-    _path_model = '/home/oscar/Codes/catkin_mio_ws/src/tmc_wrs_gazebo_world/models/'
-    #_path_xml = '/home/roboworks/Codes/catkin_mio/src/tmc_wrs_gazebo_world/models/MODEL_NAME/model-1_4.sdf'
+    #_path_xml = '/home/oscar/Codes/catkin_mio_ws/src/tmc_wrs_gazebo_world/models/MODEL_NAME/model-1_4.sdf'
     #_path_model = '/home/oscar/Codes/catkin_mio_ws/src/tmc_wrs_gazebo_world/models/'
+    _path_xml = '/home/roboworks/Codes/catkin_mio_static_objs//src/tmc_wrs_gazebo_world/models/MODEL_NAME/model-1_4.sdf'
+                                                
+    _path_model = '/home/roboworks/Codes/catkin_mio_static_objs/src/tmc_wrs_gazebo_world/models/'
     
     rospy.loginfo('Spawn: {0}'.format(name))
     initial_pose = Pose()
