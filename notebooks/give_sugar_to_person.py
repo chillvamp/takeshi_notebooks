@@ -176,7 +176,7 @@ class Goto_table(smach.State):
         #move_base_goal(goal_x+.25*self.tries, goal_y , goal_yaw)      
         
 
-        goal_x = 0.1
+        goal_x = 1.1
         goal_y = 1.2
         goal_yaw = 1.57
         goal_xyz=np.asarray((goal_x,goal_y,goal_yaw))
@@ -380,7 +380,7 @@ def init(node_name):
     navclient = actionlib.SimpleActionClient('/move_base/move', MoveBaseAction)
     clear_octo_client = rospy.ServiceProxy('/clear_octomap', Empty)
     service_client = rospy.ServiceProxy('/segment_2_tf', Trigger)
-    service_client.wait_for_service(timeout=1.0)
+    #service_client.wait_for_service(timeout=1.0)
    
 
     
